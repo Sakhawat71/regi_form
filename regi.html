@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
+
+
+
+    <link rel="icon" href="Favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    
+    <title>Registration form</title>
+</head>
+<body>
+
+    <main class="my-form">
+        <div class="cotainer">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-header">Registration form</div>
+                            <div class="card-body">
+                                <form name="regi-form" onsubmit="return validform()" action="success.php" method="POST" autocomplete="off">
+                                    
+                                    <div class="form-group row">
+                                        <label for="full_name" class="col-md-4 col-form-label text-md-right">Entry Number</label>
+                                        <div class="col-md-6">
+                                            <input type="text" id="entry_number" class="form-control" name="entry_number" required>
+                                        </div>
+                                    </div>
+    
+                                    <div class="form-group row">
+                                        <label for="email_address" class="col-md-4 col-form-label text-md-right">Student Name</label>
+                                        <div class="col-md-6">
+                                            <input type="text" id="student_name" class="form-control" name="student_name" required>
+                                        </div>
+                                    </div>
+    
+                                    <div class="form-group row">
+                                        <label for="" class="col-md-4 col-form-label text-md-right">Fathers Name</label>
+                                        <div class="col-md-6">
+                                            <input type="text" id="fathers_name" class="form-control" name="fathers_name" required>
+                                        </div>
+                                    </div>
+    
+                                    <div class="form-group row">
+                                        <label for="phone_number" class="col-md-4 col-form-label text-md-right">Mothers Name</label>
+                                        <div class="col-md-6">
+                                            <input type="text" id="mothers_name" class="form-control" name="mothers_name" required>
+                                        </div>
+                                    </div>
+    
+                                    <div class="form-group row">
+                                        <label for="present_address" class="col-md-4 col-form-label text-md-right">Subject</label>
+                                        <div class="col-md-6">
+                                            <input type="text" id="subject" name="subject" class="form-control" required>
+                                        </div>
+                                    </div>
+    
+                                    <div class="form-group row">
+                                        <label for="permanent_address" class="col-md-4 col-form-label text-md-right">Session</label>
+                                        <div class="col-md-6">
+                                            <input type="text" id="session" class="form-control" name="session" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="permanent_address" class="col-md-4 col-form-label text-md-right">Institute Name</label>
+                                        <div class="col-md-6">
+                                            <input type="text" id="institute_name" class="form-control" name="institute_name" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="permanent_address" class="col-md-4 col-form-label text-md-right">Date of Birth</label>
+                                        <div class="col-md-6">
+                                            <input type="text" id="date_of_birth" class="form-control" name="date_of_birth" required>
+                                        </div>
+                                    </div>
+    
+                                    <div class="form-group row">
+                                        <label for="nid_number" class="col-md-4 col-form-label text-md-right"><labbr
+                                                    title="National Id Card">Gender</labbr> </label>
+                                        <div class="col-md-6">
+                                            <input type="text" id="gender" class="form-control" name="gender" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group row">
+                                        <label for="permanent_address" class="col-md-4 col-form-label text-md-right">Educational Qualification</label>
+                                        <div class="col-md-6">
+                                            <input type="text" id="edu_qua" class="form-control" name="educational_qualification" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group row">
+                                        <label for="permanent_address" class="col-md-4 col-form-label text-md-right">Contact Number</label>
+                                        <div class="col-md-6">
+                                            <input type="text" id="content_number" class="form-control" name="content_number" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="permanent_address" class="col-md-4 col-form-label text-md-right">Upozila Name</label>
+                                        <div class="col-md-6">
+                                            <input type="text" id="Upozila_Name" class="form-control" name="Upozila_Name" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="permanent_address" class="col-md-4 col-form-label text-md-right">District Name</label>
+                                        <div class="col-md-6">
+                                            <input type="text" id="District_Name" class="form-control" name="District_Name" required>
+                                        </div>
+                                    </div>
+
+                                    
+
+    
+                                    
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    
+    </main>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxg-XqnLFPg5axIsnpzonvbzKDdvxZ4CDHdB1LfyndsN6tn8lE/exec'
+        const form = document.forms['google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>   
+    
+</body>
+</html>
